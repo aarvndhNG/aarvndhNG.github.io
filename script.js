@@ -37,28 +37,38 @@ function filterPaintingsByTitle(title) {
 const paintings = [
   {
     id: generatePaintingID(), // Generate a unique ID for each painting
-    title: 'Sunset Serenade',
-    image: '/Leonardo_Diffusion_Spidermanin_cyberpunk_style_neon_glowing_m_1 (1).jpg',
+    title: 'Cyberpunk Styled Spiderman',
+    image: 'inputs/Cyberpunk Style Spiderman (1).jpg',
     category: 'landscape',
-    date: '2022-05-15',
-    description: 'A serene painting capturing the beauty of a sunset over the ocean.'
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
   },
   {
     id: generatePaintingID(), // Generate a unique ID for each painting
-    title: 'Nature\'s Symphony',
-    image: 'nature.jpg',
+    title: 'Cyberpunk Styled Unknown Superhero',
+    image: '/inputs/Cyberpunk Style SuperHero.jpg',
     category: 'landscape',
-    date: '2022-08-10',
-    description: 'Vibrant colors and intricate details depict the harmonious symphony of nature.'
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
   },
   {
     id: generatePaintingID(), // Generate a unique ID for each painting
-    title: 'Abstract Dreams',
-    image: 'abstract.jpg',
-    category: 'abstract',
-    date: '2022-07-01',
-    description: 'An abstract painting that sparks the imagination and invites contemplation.'
+    title: 'Bike Styled In Cyberpunk',
+    image: '/inputs/Cyberpunk bike 2.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
   },
+  {
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'Bike Styled In Cyberpunk',
+    image: '/inputs/Cyberpunk bike.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+  
+  
   // Add more paintings as needed
 ];
 
