@@ -66,8 +66,174 @@ const paintings = [
     category: 'landscape',
     date: '22-06-2023',
     description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'Cyberpunk Styled God Of Thunder ⚡',
+    image: '/inputs/ god of thunder.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
   },
-  
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Beautiful Princess With 🌍',
+    image: '/inputs/a universal princess.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Superhero With A Power Of Rainbow 🌈',
+    image: '/inputs/a unknown rainbow superhero.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Unknown Superhero With His Light And Fire Power',
+    image: '/inputs/a unknown superhero 2.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Super Of All Mighty',
+    image: '/inputs/a unknown superhero.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Cute Kitten (one)',
+    image: '/inputs/cute kitten 1.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Cute Kitten (two)',
+    image: '/inputs/cute kitten 2.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A cute sparkling kitten',
+    image: '/inputs/cute kitten Univers.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Cute Kitten (three)',
+    image: '/inputs/cute kitten.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Bike But In Cyberpunk Style',
+    image: '/inputs/Cyberpunk bike.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Car But In Cyberpunk Style',
+    image: '/inputs/Cyberpunk car.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Cyberpunk Samurai',
+    image: '/inputs/Cyberpunk samurai.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Cyberpunk Demon',
+    image: '/inputs/demon cyberpunk (1).jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'Batman (one)',
+    image: '/inputs/devil bat man 2.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Evil Batman',
+    image: '/inputs/devil bat man.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'Ironman',
+    image: '/inputs/evil Ironman .jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'Ironman In digital painting',
+    image: '/inputs/Ironman cyberpunk.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'Cyberpunk Samurai With Water Blade',
+    image: '/inputs/samurai cyberpunk.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'Ironman In Digital painting',
+    image: '/inputs/Spiderman cyberpunk.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Super Pet',
+    image: '/inputs/super pet .jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
+{
+    id: generatePaintingID(), // Generate a unique ID for each painting
+    title: 'A Cyberpunk Superhero Cat',
+    image: '/inputs/superhero cat in Cyberpunk 2.jpg',
+    category: 'landscape',
+    date: '22-06-2023',
+    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
+  },
   
   // Add more paintings as needed
 ];
