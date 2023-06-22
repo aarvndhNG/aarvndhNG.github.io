@@ -394,3 +394,144 @@ footer.dark-theme {
 .search-button:hover {
   opacity: 0.8;
 }
+
+/* Animation for scroll elements */
+.animate-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.animate-scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation for painting elements */
+.painting {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.painting.animate-painting-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Update the font family for body text */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Update the font family for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* Update the font family for upload date */
+.upload-date {
+  font-family: "Courier New", monospace;
+}
+
+/* Update the font family for request button */
+.request-button {
+  font-family: "Courier New", monospace;
+}
+
+.scroll-reveal {
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fadeInUp 1s forwards; /* Apply the fadeInUp animation with a duration of 1 second */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translate3d(0, 50%, 0); /* Start from 50% below the original position */
+  }
+  to {
+    opacity: 1; /* End with opacity 1 */
+    transform: translate3d(0, 0, 0); /* End at the original position */
+  }
+}
+
+/* Sci-Fi Showcase Theme */
+
+/* Body styles */
+body {
+  background-color: #0e0e16;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+/* Showcase container styles */
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #191927;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Item styles */
+.item {
+  margin-bottom: 20px;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.item h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.item p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00d4ff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #009ac6;
+}
+
+/* Footer styles */
+footer {
+  background-color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: #808080;
+}
+
