@@ -18,9 +18,20 @@ function filterPaintingsByID(id) {
   });
 }
 
-// Usage example:
-const paintingID = generatePaintingID(); // Generate a unique ID
-filterPaintingsByID(paintingID); // Filter paintings by the generated ID
+// Function to filter paintings by title
+function filterPaintingsByTitle(title) {
+  const paintings = document.querySelectorAll('.painting');
+
+  paintings.forEach(painting => {
+    const paintingTitle = painting.querySelector('h2').textContent.toLowerCase();
+
+    if (paintingTitle.includes(title)) {
+      painting.style.display = 'block'; // Show the painting
+    } else {
+      painting.style.display = 'none'; // Hide the painting
+    }
+  });
+}
 
 // Example painting data
 const paintings = [
@@ -139,6 +150,6 @@ sortSelect.addEventListener('change', function () {
 });
 
 searchButton.addEventListener('click', () => {
-  const searchID = searchInput.value.trim();
-  filterPaintingsByID(searchID);
+  const searchTitle = searchInput.value.trim().toLowerCase();
+  filterPaintingsByTitle(searchTitle);
 });
