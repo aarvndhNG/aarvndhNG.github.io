@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aarvndh's Painting Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+  <header>
+    <h1>aarvndh's AI Generated Painting</h1>
+  </header>
+
+  <main>
+    <div class="filter-sort">
+      <label for="filter">Filter by:</label>
+      <select id="filter">
+        <option value="all">All</option>
+        <option value="landscape">Landscape</option>
+        <option value="portrait">Portrait</option>
+        <option value="abstract">Abstract</option>
+      </select>
+
+      <label for="sort">Sort by:</label>
+      <select id="sort">
+        <option value="default">Default</option>
+        <option value="title">Title</option>
+        <option value="date">Date</option>
+      </select>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search by ID">
+      <button id="search-button">Search</button>
+    </div>
+
+    <section id="paintings">
+      <!-- Paintings will be dynamically added here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 aarvndh | All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
