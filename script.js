@@ -67,14 +67,6 @@ const paintings = [
     date: '22-06-2023',
     description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
   },
-  {
-    id: generatePaintingID(), // Generate a unique ID for each painting
-    title: 'Cyberpunk Styled God Of Thunder ⚡',
-    image: '/inputs/god of thunder.jpg',
-    category: 'landscape',
-    date: '22-06-2023',
-    description: 'generator by AI you can request for this image in my Instagram by clicking the request button below '
-  },
 {
     id: generatePaintingID(), // Generate a unique ID for each painting
     title: 'A Beautiful Princess With 🌍',
