@@ -61,7 +61,7 @@ function checkPassword() {
     const enteredPassword = document.getElementById('password').value;
 
     // Replace 'yourPassword' with your actual password
-    if (enteredPassword === '1234') {
+    if (enteredPassword === '1aravin234') {
         // Correct password, show the content
         document.getElementById('password-container').style.display = 'none';
         document.getElementById('gallery').style.display = 'block';
