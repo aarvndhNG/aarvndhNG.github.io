@@ -67,7 +67,7 @@ function checkPassword() {
         document.getElementById('gallery').style.display = 'block';
     } else {
         // Incorrect password, show an alert or handle it as needed
-        alert('Incorrect password. Please try again.');
+        alert('Oops Wrong Password. Ask To The Owner To Get New Password To Enter!');
     }
 }
 // Existing JavaScript remains unchanged
