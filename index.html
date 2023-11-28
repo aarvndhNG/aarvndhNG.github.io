@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>aarvndh's  AI Painting Showcase</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
-  <link rel="icon" type="image/gif" href="107058543.gif">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <title>Your AI Art Showcase</title>
 </head>
-
 <body>
-  <header>
-    <h1> aarvndh's AI Painting Showcase</h1>
-  </header>
-
-  <main>
-    <div class="filter-sort">
-      <label for="filter">Filter by:</label>
-      <select id="filter">
-        <option value="all">All</option>
-        <option value="landscape">Landscape</option>
-        <option value="portrait">Portrait</option>
-        <option value="abstract">Abstract</option>
-      </select>
-
-      <label for="sort">Sort by:</label>
-      <select id="sort">
-        <option value="default">Default</option>
-        <option value="title">Title</option>
-        <option value="date">Date</option>
-      </select>
+    <div id="password-container">
+        <label for="password">Enter Password:</label>
+        <div class="password-input-container">
+            <input type="password" id="password" class="password-input">
+            <span class="eye-icon" onclick="togglePasswordVisibility()">&#128065;</span>
+        </div>
+        <button onclick="checkPassword()">Submit</button>
     </div>
-    <section class="scroll-reveal">
-    <div class="search-bar">
-      <input type="text" id="search-input" placeholder="Search">
-      <button id="search-button">Search</button>
-    </div>
-    <section id="paintings">
-      <!-- Paintings will be dynamically added here -->
-    </section>
-  </main>
- </section>
-  <footer>
-    <p>&copy; 2023 aarvndh | All rights reserved</p>
-  </footer>
 
-  <script src="script.js"></script>
+    <div id="gallery" class="animated-gallery">
+        <!-- Art Piece 1 -->
+        <div class="art-container" onclick="showDetails(1)">
+            <img src="/image/out-0%20(1).jpg" alt="Art Title 1">
+            <div class="art-details">
+                <h3>Art Title 1</h3>
+                <p>Positive Prompt: Positive Prompt for Art 1</p>
+                <p>Negative Prompt: Negative Prompt for Art 1</p>
+                <p>Seed: Seed for Art 1</p>
+                <p>Steps: Steps for Art 1</p>
+                <p>CFG Scale: CFG Scale for Art 1</p>
+            </div>
+        </div>
+
+        <!-- Art Piece 2 -->
+        <div class="art-container" onclick="showDetails(2)">
+            <img src="/image/out-0%20(2).jpg" alt="Art Title 2">
+            <div class="art-details">
+                <h3>Art Title 2</h3>
+                <p>Positive Prompt: Positive Prompt for Art 2</p>
+                <p>Negative Prompt: Negative Prompt for Art 2</p>
+                <p>Seed: Seed for Art 2</p>
+                <p>Steps: Steps for Art 2</p>
+                <p>CFG Scale: CFG Scale for Art 2</p>
+            </div>
+        </div>
+        <!-- Add more art pieces similarly -->
+    </div>
+
+    <footer>
+        <!-- Additional Information or Links... -->
+    </footer>
 </body>
-
 </html>
