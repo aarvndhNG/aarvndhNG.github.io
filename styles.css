@@ -1,537 +1,298 @@
-/* Add your custom CSS styles here */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: brightness(100%)
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    animation: fadeIn 1s ease;
 }
 
-header {
-  background-color: #333;
-  padding: 30px;
-  text-align: center;
-}
-
-h1 {
-  color: #fff;
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.filter-sort {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-label {
-  color: #666;
-  font-size: 16px;
-  font-weight: 700;
-  margin-right: 10px;
-}
-
-select {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 8px;
-  font-size: 14px;
-}
-
-#paintings {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 30px;
-}
-
-.painting {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  background-color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.painting:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.painting img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease;
-}
-
-.painting:hover img {
-  transform: scale(1.1);
-}
-
-h2 {
-  color: #333;
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-p {
-  color: #666;
-  font-size: 14px;
-  margin: 0;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.footer-text {
-  margin: 0;
-}
-
-.footer-link {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-}
-
-/* Animation */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
-
-@keyframes slideIn {
-  from {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.painting {
-  animation: slideIn 0.5s ease-in-out forwards;
-}
-
 header {
-  animation: fadeIn 1s ease-in-out;
+    background-color: #333;
+    text-align: center;
+    padding: 1em;
+}
+
+.animated-heading {
+    animation: fadeInUp 1s ease-out;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.animated-gallery {
+    animation: fadeIn 1s ease-out;
 }
 
 footer {
-  animation: fadeIn 1s ease-in-out;
+    background-color: #333;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 24px;
-  }
+#gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
 
-  #paintings {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding: 15px;
-  }
+#gallery img:hover {
+    transform: scale(1.1);
+}
 
-  .filter-sort {
+/* Futuristic styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 12px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Existing styles remain unchanged */
+
+#gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Futuristic styles */
+.art-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.art-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.art-container:hover .art-details {
+    opacity: 1;
+}
+/* Existing styles remain unchanged */
+
+.art-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); /* Gradient for a stylish overlay effect */
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 14px;
+    text-align: left;
+}
+
+.art-details h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.art-details p {
+    margin: 6px 0;
+}
+
+.art-container:hover .art-details {
+    opacity: 1;
+}
+/* Futuristic styles */
+.art-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); /* Gradient for a stylish overlay effect */
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 14px;
+    text-align: left;
+}
+
+.art-details h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.art-details p {
+    margin: 6px 0;
+}
+
+.art-container:hover .art-details {
+    opacity: 1;
+}
+/* Existing styles remain unchanged */
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    margin: 10px; /* Adjust margin as needed */
+}
+
+.art-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); /* Gradient for a stylish overlay effect */
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 14px;
+    text-align: left;
+}
+
+.art-details h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.art-details p {
+    margin: 6px 0;
+}
+
+.art-container:hover .art-details {
+    opacity: 1;
+}
+/* Existing styles remain unchanged */
+
+#password-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
-  }
-
-  label {
-    margin-bottom: 5px;
-  }
-
-  select {
-    max-width: 200px;
-  }
+    align-items: center;
+    color: #fff;
 }
 
-/* Dark Theme */
-body.dark-theme {
-  background-color: #333;
-  color: #fff;
+#password-container label,
+#password-container input,
+#password-container button {
+    margin: 10px;
 }
 
-header.dark-theme {
-  background-color: #000;
+#gallery {
+    display: none; /* Initially hide the gallery */
 }
 
-h1.dark-theme {
-  color: #fff;
+/* Futuristic styles... */
+/* Existing styles remain unchanged */
+
+#password-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
 }
 
-.filter-sort.dark-theme {
-  color: #fff;
+.password-input-container {
+    position: relative;
+    width: 100%;
 }
 
-label.dark-theme {
-  color: #ccc;
+.password-input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-select.dark-theme {
-  border: 1px solid #ccc;
-  background-color: #555;
-  color: #fff;
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
 }
 
-#paintings.dark-theme {
-  background-color: #222;
-  border-color: #555;
+#gallery {
+    display: none; /* Initially hide the gallery */
 }
 
-.painting.dark-theme {
-  background-color: #444;
-  border-color: #555;
-}
-
-.painting.dark-theme:hover {
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
-}
-
-h2.dark-theme {
-  color: #fff;
-}
-
-p.dark-theme {
-  color: #ccc;
-}
-
-footer.dark-theme {
-  background-color: #000;
-  color: #ccc;
-}
-
-.footer-link.dark-theme {
-  color: #fff;
-}
-
-.footer-link.dark-theme:hover {
-  text-decoration: underline;
-}
-
-/* Dark Theme Button */
-.dark-theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.dark-theme-toggle:hover {
-  background-color: #555;
-}
-
-/* Dark Theme Request Button */
-.request-button {
-  background-color: #555;
-  color: #fff;
-}
-
-.request-button:hover {
-  background-color: #777;
-}
-
-.search-button {
-  background-color: #555;
-  color: #fff;
-}
-
-.search-button:hover {
-  background-color: #777;
-}
-
-/* Styling for painting container */
-.painting {
-  display: block;
-  margin-bottom: 20px;
-}
-
-/* Styling for painting image */
-.painting img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Styling for painting title */
-.painting h2 {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* Styling for painting description */
-.painting p {
-  margin-top: 5px;
-  font-size: 14px;
-  color: #555;
-}
-
-/* Styling for painting upload date */
-.painting .upload-date {
-  margin-top: 5px;
-  font-size: 12px;
-  color: #777;
-}
-
-/* Styling for request button */
-.painting .request-button {
-  display: block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* Styling for request button with dark color and animation */
-.painting .request-button {
-  display: block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #333;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  animation: pulsate 1.5s ease-in-out infinite;
-}
-
-.painting .request-button:hover {
-  opacity: 0.8;
-}
-
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-/* Styling for search input and button */
-#search-input {
-  width: 200px;
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-#search-button {
-  margin-left: 10px;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-#search-button:hover {
-  background-color: #0056b3;
-}
-
-/* Styling for search button with dark color */
-.search-button {
-  display: inline-block;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #333;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.search-button:hover {
-  opacity: 0.8;
-}
-
-/* Animation for scroll elements */
-.animate-scroll {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-.animate-scroll-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Animation for painting elements */
-.painting {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.5s, transform 0.5s;
-}
-
-.painting.animate-painting-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Update the font family for body text */
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-/* Update the font family for headings */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-
-/* Update the font family for upload date */
-.upload-date {
-  font-family: "Courier New", monospace;
-}
-
-/* Update the font family for request button */
-.request-button {
-  font-family: "Courier New", monospace;
-}
-
-.scroll-reveal {
-  opacity: 0; /* Set initial opacity to 0 */
-  animation: fadeInUp 1s forwards; /* Apply the fadeInUp animation with a duration of 1 second */
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0; /* Start with opacity 0 */
-    transform: translate3d(0, 50%, 0); /* Start from 50% below the original position */
-  }
-  to {
-    opacity: 1; /* End with opacity 1 */
-    transform: translate3d(0, 0, 0); /* End at the original position */
-  }
-}
-
-/* Sci-Fi Showcase Theme */
-
-/* Body styles */
-body {
-  background-color: #0e0e16;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Header styles */
-header {
-  background-color: #000000;
-  padding: 20px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 32px;
-  margin: 0;
-}
-
-/* Showcase container styles */
-.container {
-  max-width: 960px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #191927;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-
-/* Item styles */
-.item {
-  margin-bottom: 20px;
-}
-
-.item img {
-  max-width: 100%;
-  height: auto;
-}
-
-.item h2 {
-  font-size: 24px;
-  margin: 10px 0;
-}
-
-.item p {
-  font-size: 16px;
-  margin: 0;
-}
-
-/* Button styles */
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #00d4ff;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #009ac6;
-}
-
-/* Footer styles */
-footer {
-  background-color: #000000;
-  padding: 20px;
-  text-align: center;
-}
-
-footer p {
-  margin: 0;
-  color: #808080;
-}
-
+/* Futuristic styles... */
